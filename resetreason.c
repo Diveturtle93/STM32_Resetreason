@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------
-// Titel	:	ResetReason.c
+// Titel	:	resetreason.c
 //----------------------------------------------------------------------
 // Sprache	:	C
 // Datum	:	16.05.2025
@@ -20,8 +20,8 @@
 
 // Einfuegen der eigenen Include Dateien
 //----------------------------------------------------------------------
-#include "ResetReason.h"
-#include "BasicUart.h"
+#include "basicuart.h"
+#include "resetreason.h"
 //----------------------------------------------------------------------
 
 // Collects Reset source Flag microcontroller
