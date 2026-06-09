@@ -24,7 +24,7 @@
 #include "resetreason.h"
 //----------------------------------------------------------------------
 
-// Collects Reset source Flag microcontroller
+// Sammelt Reset Source Flag Mikrocontroller
 //----------------------------------------------------------------------
 reset_reason readResetSource(void)
 {
@@ -94,7 +94,7 @@ reset_reason readResetSource(void)
 }
 //----------------------------------------------------------------------
 
-// Print reset source from microcontroller
+// Schreibe Reset Source vom Mikrocontroller
 //----------------------------------------------------------------------
 void printResetSource(reset_reason reset_flags)
 {
@@ -105,13 +105,13 @@ void printResetSource(reset_reason reset_flags)
 	else
 	{
 		// Pruefe Reset Flag Internen Watchdog
-		if (reset_flags & IWDGRST1)											// Independent watchdog Reset
+		if (reset_flags & IWDGRST1)											// Independent Watchdog Reset
 		{
 			uartTransmit("Interner Watchdog Reset\n", 24);
 		}
 		
 		// Pruefe Reset Flag Window Watchdog
-		if (reset_flags & WWDGRST1)											// Window watchdog Reset
+		if (reset_flags & WWDGRST1)											// Window Watchdog Reset
 		{
 			uartTransmit("Window Watchdog Reset\n", 22);
 		}
@@ -151,7 +151,7 @@ void printResetSource(reset_reason reset_flags)
 		}
 		
 		// Pruefe Reset Flag Pin-Reset
-		if (reset_flags & PINRST1)											// NRST pin
+		if (reset_flags & PINRST1)											// NRST Pin
 		{
 			uartTransmit("PIN Reset\n", 10);
 		}
